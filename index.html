@@ -3,35 +3,41 @@
 	
 	    <title>Test site</title>
 
-	    <script  type="text/javascript" src="docker.js"></script>
-	    <link rel="stylesheet" href="docke.css">
+	    <script  type="text/javascript" src="/DockerWebsite_Task7/docker.js"></script>
+	    <link rel="stylesheet" href="/DockerWebsite_Task7/docker.css">
 	
 	</head>
 
 <body>
-<div id = "header_div"> 
-<p id="title_cmd">Docker Commands</p>
+
+
+<div id = "header_div" "> 
+<div id="title_name"><big><b>Docker Image</b></big></div>
 </div>
+
+	
 
 <div id="terminal">
 
-   
-		[root@localhost~]# <input id = "in1" placeholder="Enter your command here">
+		<div id="terminal_head">
+		<i>root@localhost:DockerWebsite</i>
+		</div>
 		
-	
-		<br /> 
+		<div id="b">
+			<div>
+				[root@localhost~]# <input id = "in1" placeholder="Enter your command here">
+			</div>
 			<pre>
-				<div id = "d1"> Here we have output... </div> 
+				<div id = "d1">Output promt.... </div> 
 			</pre>
+
+		</div>		
 </div>
 
-<div id="submit_btn">
-	<button  onclick="docker_cmd()">click</button>
-</div>
 
-
-
-
+<div id="b1">
+<button  onclick="docker_cmd()" id="submit_btn">Click</button>
+</div>			
 
 
 </body>
